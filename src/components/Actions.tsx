@@ -10,7 +10,8 @@ const Actions = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
         </svg>
       ),
-      color: "blue"
+      color: "blue",
+      emoji: "🤝 👕 👖 🧥"
     },
     {
       title: "Collecte et distribution de repas chauds",
@@ -37,7 +38,8 @@ const Actions = () => {
         </svg>
       ),
       color: "red",
-      partner: "En partenariat avec la Croix Rouge"
+      partner: "En partenariat avec la Croix Rouge",
+      emoji: "🤲 📚 ✏️ 🎒"
     },
     {
       title: "Collecte et distribution de produits d'hygiène",
@@ -47,7 +49,8 @@ const Actions = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
         </svg>
       ),
-      color: "purple"
+      color: "purple",
+      emoji: "🫴 🧼 🪥 🧻"
     }
   ]
 
@@ -148,7 +151,7 @@ const Actions = () => {
                   <p className="text-gray-600 leading-relaxed mb-6">
                     {action.description}
                   </p>
-                  {action.images && action.images.length > 0 && (
+                  {action.images && action.images.length > 0 ? (
                     <div className="mt-6">
                       <ImageCarousel 
                         images={action.images} 
@@ -156,6 +159,15 @@ const Actions = () => {
                         autoPlay={true}
                         autoPlayInterval={5000}
                       />
+                    </div>
+                  ) : action.emoji && (
+                    <div className="text-center py-8">
+                      <div className="text-4xl mb-3" role="img" aria-label="Illustrations du projet">
+                        {action.emoji}
+                      </div>
+                      <p className="text-sm text-gray-500 italic">
+                        Photos à venir
+                      </p>
                     </div>
                   )}
                 </div>

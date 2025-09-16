@@ -1,0 +1,33 @@
+/* Import de la police Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import "tailwindcss";
+
+/* Variables CSS pour les couleurs sobres et �pur�es */
+:root {
+  /* Couleurs principales - tons bleus �pur�s */
+  --color-primary: #4A90A4;
+  --color-primary-light: #7BB3C0;
+  --color-primary-dark: #2E6B7A;
+  
+  /* Couleurs secondaires - tons neutres */
+  --color-secondary: #8E9AAF;
+  --color-secondary-light: #C1C8D4;
+  --color-secondary-dark: #6B7589;
+  
+  /* Couleurs d'accent - tons chauds subtils */
+  --color-accent: #C9A96E;
+  --color-accent-light: #E4CC9B;
+  --color-accent-dark: #B3924A;
+}
+
+/* Configuration globale */
+* {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+}

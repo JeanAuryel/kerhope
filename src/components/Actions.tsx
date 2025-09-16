@@ -22,9 +22,10 @@ const Actions = () => {
       ),
       color: "green",
       images: [
-        "/images/placeholder.svg",
-        "/images/placeholder.svg",
-        "/images/placeholder.svg"
+        "/distribution-de-repas=chaud.jpg",
+        "/distribution-de-repas=chaud-2.jpg",
+        "/distribution-à-la-gare-de-nantes.jpg",
+        "/distribution-à-la-gare-de-nantes-2.jpg"
       ]
     },
     {
